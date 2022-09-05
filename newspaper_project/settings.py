@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     'crispy_forms',
     'users',
     'pages',
+    'articles',
 ]
+
+TIME_ZONE = 'Asia/Dhaka'
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
