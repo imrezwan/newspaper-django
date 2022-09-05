@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Articles Detail {% endblock %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-header">
+            <h1><span class="font-weight-bold">{{ article.title }}</span></h1>&middot;
+            <span class="text-muted"> by {{article.author}} | {{article.date}}</span>
+        </div>
+        <div class="card-body">
+            <img src="{% static 'images/django.webp' %}" alt="" width="120">
+            {{article.body}}
+        </div>
+        <div class="card-footer">
+            {% for comment in article.comments.all %}
+                <p><span class="font-weight-bold">{{comment.author}}</span></p>
+                {{comment}}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

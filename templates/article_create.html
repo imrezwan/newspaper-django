@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} Articles Create {% endblock %}
+
+{% block content %}
+    <h1>Create</h1>
+    <form action="" method="post">{% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-danger ml-2" type="submit">Add</button>
+    </form>
+{% endblock content %}
