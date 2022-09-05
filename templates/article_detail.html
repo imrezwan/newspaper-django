@@ -10,7 +10,7 @@
             <span class="text-muted"> by {{article.author}} | {{article.date}}</span>
         </div>
         <div class="card-body">
-            <img src="{% static 'images/django.webp' %}" alt="" width="120">
+            <img src="{{article.image.url}}" alt="" width="300">
             {{article.body}}
         </div>
         <div class="card-footer">

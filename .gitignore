@@ -1,0 +1,7 @@
+newspaper_project/__pycache__/
+pages/__pycache__/
+pages/migrations/__pycache__/
+users/__pycache__/
+users/migrations/__pycache__/
+articles/__pycache__/
+articles/migrations/__pycache__/
