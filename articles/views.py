@@ -2,6 +2,7 @@ from django.views.generic import ListView, DetailView, UpdateView, DeleteView, C
 from django.contrib.auth.mixins import LoginRequiredMixin
 from articles.models import Article
 from django.urls import reverse_lazy
+from django.db.models import Q
 
 class ArticleListView(ListView):
     template_name = 'article_list.html'
@@ -31,3 +32,14 @@ class ArticleDeleteView(DeleteView):
     template_name = 'article_delete.html'
     model = Article
     success_url = reverse_lazy('article_list')
+
+class ArticleSearchView(ListView):
+    model = Article
+    context_object_name = 'article_list'
+    template_name = 'search_results.html'
+
+    def get_queryset(self):
+        query = self.request.GET.get('q')
+        return Article.objects.filter(
+            Q(title__contains=query) | Q(body__contains=query)
+        )

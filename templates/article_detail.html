@@ -10,7 +10,9 @@
             <span class="text-muted"> by {{article.author}} | {{article.date}}</span>
         </div>
         <div class="card-body">
-            <img src="{{article.image.url}}" alt="" width="300">
+            {% if article.image and article.image.url  %}
+                <img src="{{article.image.url}}" alt="" width="300">
+            {% endif %}
             {{article.body}}
         </div>
         <div class="card-footer">

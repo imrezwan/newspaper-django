@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <form class="form-inline mt2 mt-md-0" action="{% url 'article_search' %}" method="get">
+        <input type="text" placeholder="Search" name="q" >
+    </form>
     <div class="jumbotron">
         <h1 class="display-4">Newpaper app</h1>
         <p class="lead">A Newspaper website built with Django</p>

@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "72a929207d11df52021d5306e81b1841ffad8c2f9dff83da7cf3b1329b85a6f0"
+            "sha256": "3759ecb0fc36ae4a3931ef6734423f374862f3b2f5a85decdd7f4e8e326b3b1e"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.7"
+            "python_version": "3.10"
         },
         "sources": [
             {
@@ -26,11 +26,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:115baf5049d5cf4163e43492cdc7139c306ed6d451e7d3571fe9612903903713",
-                "sha256:f71934b1a822f14a86c9ac9634053689279cd04ae69cb6ade4a59471b886582b"
+                "sha256:a153ffd5143bf26a877bfae2f4ec736ebd8924a46600ca089ad96b54a1d4e28e",
+                "sha256:acb21fac9275f9972d81c7caf5761a89ec3ea25fe74545dd26b8a48cb3a0203e"
             ],
             "index": "pypi",
-            "version": "==3.2.15"
+            "version": "==4.1.1"
         },
         "django-crispy-forms": {
             "hashes": [
@@ -104,13 +104,6 @@
             "index": "pypi",
             "version": "==9.2.0"
         },
-        "pytz": {
-            "hashes": [
-                "sha256:220f481bdafa09c3955dfbdddb7b57780e9a94f5127e35456a48589b9e0c0197",
-                "sha256:cea221417204f2d1a2aa03ddae3e867921971d0d76f14d87abb4414415bbdcf5"
-            ],
-            "version": "==2022.2.1"
-        },
         "sqlparse": {
             "hashes": [
                 "sha256:0c00730c74263a94e5a9919ade150dfc3b19c574389985446148402998287dae",
@@ -119,13 +112,13 @@
             "markers": "python_version >= '3.5'",
             "version": "==0.4.2"
         },
-        "typing-extensions": {
+        "tzdata": {
             "hashes": [
-                "sha256:25642c956049920a5aa49edcdd6ab1e06d7e5d467fc00e0506c44ac86fbfca02",
-                "sha256:e6d2677a32f47fc7eb2795db1dd15c1f34eff616bcaf2cfb5e997f854fa1c4a6"
+                "sha256:21f4f0d7241572efa7f7a4fdabb052e61b55dc48274e6842697ccdf5253e5451",
+                "sha256:c3119520447d68ef3eb8187a55a4f44fa455f30eb1b4238fa5691ba094f2b05b"
             ],
-            "markers": "python_version < '3.8'",
-            "version": "==4.3.0"
+            "markers": "sys_platform == 'win32'",
+            "version": "==2022.2"
         }
     },
     "develop": {}
